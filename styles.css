@@ -1,0 +1,106 @@
+:root {
+    --main-bg-color: fafafa;
+    --main-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    border-bottom-left-radius: 70% 40%;
+    border-bottom-right-radius: 70% 40%;
+    background-color: #feca1b;
+    border-bottom: #3861a4 4px solid;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+header img {
+    width: 15rem;
+    height: 15rem;
+    pointer-events: none;
+}
+
+main {
+    margin: 1.5rem auto;
+    width: 85%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: .15rem;
+}
+
+input {
+    background-color: var(--main-bg-color);
+    border: 1px solid #dbdbdb;
+    height: 1.9em;
+    width: 15.5em;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .15rem;
+}
+input:focus{
+    outline: none;
+    border-color: #a8a8a8;
+}
+input::placeholder {
+    font-size: .8rem;
+    text-align: center;
+    color: #808080;
+    font-family: var(--main-font);
+}
+.poke-card{
+    width: 10rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background-size: cover!important;
+    border-radius: 10px;
+    backdrop-filter: blur(1rem);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+[data-poke-name],[data-poke-id]{
+    font-weight: 700;
+    color: #222;
+    font-family: inherit;
+    text-align: center;
+}
+[data-poke-name]::first-letter{
+text-transform: uppercase
+}
+footer{
+    background-color: #feca1b;
+    height: 12rem;
+    width: 100%;
+    border-top: #3861a4 4px solid;
+}
+.poke-types{
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+    color: #fff;
+    font-size: .8rem;
+}
