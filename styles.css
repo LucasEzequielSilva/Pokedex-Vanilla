@@ -69,8 +69,9 @@ input::placeholder {
     font-family: var(--main-font);
 }
 .poke-card{
-    width: 10rem;
-    height: 15rem;
+    width: 15rem;
+    min-height: 15rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,12 +91,7 @@ input::placeholder {
 [data-poke-name]::first-letter{
 text-transform: uppercase
 }
-footer{
-    background-color: #feca1b;
-    height: 12rem;
-    width: 100%;
-    border-top: #3861a4 4px solid;
-}
+
 .poke-types{
     border-radius: 1rem;
     text-transform: uppercase;
@@ -103,4 +99,20 @@ footer{
     font-weight: 700;
     color: #fff;
     font-size: .8rem;
+}
+.poke-img{
+    transition: .8s;
+}
+.poke-img:hover{
+    filter: drop-shadow(0 0 1.25rem rgba(255, 255, 255, 0.507));
+}
+.poke-stats{
+    width: 90%;
+    margin-top: 1rem;
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 100%;
 }
